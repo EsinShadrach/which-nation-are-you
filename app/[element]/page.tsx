@@ -53,6 +53,7 @@ export default function Results({ params }: ResultProps) {
           <div className="absolute inset-0 z-10 w-full backdrop-blur-xl h-96" />
           <div className={`absolute w-full p-6 rounded-lg ${element["bg"]}`}>
             <Image
+              placeholder="blur"
               alt={`${paramElement} Nation`}
               src={handleImage()}
               className="mx-auto h-80 scale-125"
@@ -60,6 +61,7 @@ export default function Results({ params }: ResultProps) {
           </div>
           <div className="absolute z-20 w-full p-6 mx-3">
             <Image
+              placeholder="blur"
               alt={`${paramElement} Nation`}
               src={handleImage()}
               className="mx-auto object-cove h-80"
